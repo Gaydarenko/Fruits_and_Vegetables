@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 .idea/
+Fruits_and_Vegetables/settings.py
