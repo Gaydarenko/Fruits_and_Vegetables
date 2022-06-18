@@ -46,3 +46,8 @@ class ContactView(View):
 class BlogView(View):
     def get(self, request):
         return render(request, "store/blog.html")
+
+
+class BlogSingle(View):
+    def get(self, request):
+        return render(request, "store/blog-single.html")
