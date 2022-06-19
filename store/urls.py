@@ -10,6 +10,7 @@ urlpatterns = [
     path('checkout/', CheckoutView.as_view(), name="checkout"),
     path('contact/', ContactView.as_view(), name="contact"),
     path('shop/', ShopView.as_view(), name="shop"),
+    path('shop/<int:page>', ShopView.as_view()),
     path('single_product/', SingleProductView.as_view(), name="single_product"),
     path('wishlist/', WishlistView.as_view(), name="wishlist"),
 ]
