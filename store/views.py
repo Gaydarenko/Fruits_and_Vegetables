@@ -22,7 +22,7 @@ class ShopView(View):
             products = paginator.page(page)
         except EmptyPage:
             return redirect(reverse("shop"))
-        data = {"products": products, "current_page": page, "num_pages": paginator.page_range}
+        data = {"products": products, "current_page": page, "num_pages": paginator.page_range, "info": INFO}
 
         return render(request, "store/shop.html", data)
 
